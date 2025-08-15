@@ -1,0 +1,4 @@
+rootProject.name = 'spring-template'
+include 'module-core'
+include 'module-application-test'
+

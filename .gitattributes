@@ -1,0 +1,41 @@
+# Text file use LF
+*.java     text eol=lf
+*.kt       text eol=lf
+*.xml      text eol=lf
+*.yml      text eol=lf
+*.yaml     text eol=lf
+*.properties text eol=lf
+*.gradle   text eol=lf
+*.md       text eol=lf
+*.html     text eol=lf
+*.css      text eol=lf
+*.js       text eol=lf
+*.json     text eol=lf
+*.sh       text eol=lf
+*.sql      text eol=lf
+*.txt      text eol=lf
+*.gitignore text eol=lf
+Dockerfile text eol=lf
+
+# Exception for windows file
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files avoid line breaks
+*.jar      -text
+*.war      -text
+*.class    -text
+*.png      -text
+*.jpg      -text
+*.jpeg     -text
+*.gif      -text
+*.ico      -text
+*.pdf      -text
+*.zip      -text
+*.exe      -text
+*.dll      -text
+
+
+* text=auto
+*.java text working-tree-encoding=UTF-8
+*.txt text working-tree-encoding=UTF-8
