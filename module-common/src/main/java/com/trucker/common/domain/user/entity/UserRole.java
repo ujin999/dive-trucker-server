@@ -1,4 +1,4 @@
-package com.trucker.common.domain.user;
+package com.trucker.common.domain.user.entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;

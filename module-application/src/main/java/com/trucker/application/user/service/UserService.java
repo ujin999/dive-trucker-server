@@ -3,7 +3,7 @@ package com.trucker.application.user.service;
 import com.trucker.application.user.dto.UserCreateDto;
 import com.trucker.application.user.dto.UserResponseDto;
 import com.trucker.application.user.repository.UserRepository;
-import com.trucker.common.domain.user.User;
+import com.trucker.common.domain.user.entity.User;
 import com.trucker.core.exception.BusinessException;
 import com.trucker.core.exception.ErrorCode;
 import lombok.RequiredArgsConstructor;

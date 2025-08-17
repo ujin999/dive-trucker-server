@@ -1,5 +1,6 @@
 package com.trucker.core.handler;
 
+import com.trucker.core.exception.NotFoundException;
 import com.trucker.core.response.ApiErrorResponse;
 import com.trucker.core.exception.ErrorCode;
 import lombok.extern.slf4j.Slf4j;
@@ -32,5 +33,16 @@ public class GlobalExceptionHandler {
         );
 
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(NotFoundException.class)
+    public ResponseEntity<ApiErrorResponse> handleNotFoundException(NotFoundException e) {
+        log.error("handleNotFoundException", e);
+        final ApiErrorResponse response = ApiErrorResponse.of(
+                e.getErrorCode().getStatus(),
+                e.getErrorCode().getErrorCode(),
+                e.getErrorCode().getMessage()
+        );
+        return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
     }
 }

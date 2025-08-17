@@ -1,6 +1,6 @@
 package com.trucker.application.user.repository;
 
-import com.trucker.common.domain.user.User;
+import com.trucker.common.domain.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
