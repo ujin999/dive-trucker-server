@@ -1,5 +1,6 @@
 package com.tucker.core.exception;
 
+import com.trucker.core.exception.ErrorCode;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

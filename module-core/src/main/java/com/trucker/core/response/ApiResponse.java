@@ -1,4 +1,4 @@
-package com.tucker.core.response;
+package com.trucker.core.response;
 
 public record ApiResponse<T>(
         int status,

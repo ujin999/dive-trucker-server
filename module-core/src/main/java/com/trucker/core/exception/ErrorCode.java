@@ -1,4 +1,4 @@
-package com.tucker.core.exception;
+package com.trucker.core.exception;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -25,6 +25,7 @@ public enum ErrorCode {
     // User
     INVALID_USER_STATUS(400, "INVALID_USER_STATUS", "Invalid User Status"),
     USER_NOT_FOUND(404, "USER_NOT_FOUND", "User Not Found"),
+    EMAIL_DUPLICATION(401, "EMAIL_DUPLICATION", "Email Duplicated")
 
     ;
 

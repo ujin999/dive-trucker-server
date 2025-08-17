@@ -1,4 +1,4 @@
-package com.tucker.core.config;
+package com.trucker.core.config;
 
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;
