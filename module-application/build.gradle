@@ -3,6 +3,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     // postgreSQL
@@ -17,6 +18,12 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
     testCompileOnly 'org.projectlombok:lombok'
+
+    // proj4j
+    implementation 'org.locationtech.proj4j:proj4j:1.1.5'
+
+    // xml
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
 
     // test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
