@@ -25,6 +25,9 @@ dependencies {
     // xml
     implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
 
+    // jsoup
+    implementation 'org.jsoup:jsoup:1.18.1'
+
     // test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
